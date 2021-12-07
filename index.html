@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <link rel="stylesheet" href="index.css">
+        <div id="count1">
+            <br>
+            <label id="count"></label>
+        </div>
+        
+        <div id="operators"> 
+            <br><br>
+        <button id="button" onclick="decrease()"> decrease</button> <button id="button" onclick="reset()">Reset</button> <button onclick="increase()" id="button">increment</button>
+        </div>
+       
+
+    </body>
+    <script> 
+        var i=0;
+        var count=document.getElementById("count");
+       count.innerText=i;
+            function decrease(){
+                i=i-1;
+                document.getElementById("count").innerText=i;
+            }  
+            function reset(){
+                i=0;
+                count.innerText=i;
+            }
+            function increase(){
+                i=i+1;
+                count.innerText=i;
+            }
+    </script>
+</html> 
